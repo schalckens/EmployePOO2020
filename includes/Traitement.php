@@ -1,12 +1,10 @@
 <?php
+namespace App\includes;
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-namespace App\Includes;
+use ClassesMetier\DRH\EmployeInformaticien;
+use ClassesMetier\DRH\EmployeNonInformaticien;
+use ClassesMetier\RD\Projet;
+use DateTime;
 
 class Traitement {
     
@@ -17,6 +15,7 @@ class Traitement {
         //echo $e;
         //echo "<br>";
     //}
+    
     //public static function instanciationUnEmployeErreur() : void{
         //$e = new employe(1, "Durand", "Sylvie", new DateTime("12/07/1980"), 800.00);
         //$nom = $e->getNom();
@@ -32,6 +31,7 @@ class Traitement {
         echo "Nom du projet = " . $p->getNomProjet();
         echo "<br>";
     }
+    
     public static function instanciationEmployeInformaticienV1(){
         $p = new Projet('PR7', 'Librairie Gelistout', 102);
         $informaticien = new EmployeInformaticien(2, 'Dimont', 'Patrick', new DateTime("1980/07/12"),1200,$p);
@@ -40,6 +40,7 @@ class Traitement {
         echo $informaticien;
         echo "<br>";
     }
+    
     public static function instanciationEmployeInformaticienV2(){
         $p = new Projet('PR8', 'Association Bolide', 34);
         $informaticien = new EmployeInformaticien(3, 'Juvani', 'Adèle', new DateTime("1990/12/09"),1100,$p);
@@ -49,6 +50,7 @@ class Traitement {
         $informaticien->setPrimeM(600);
         echo "Nouvelle prime = " . $informaticien->getPrimeM();
     }
+    
     public static function instanciationEmployeNonInformaticienV1(){
         $nonInformaticien = new EmployeNonInformaticien(4, 'Duvernon', 'Hélène', new DateTime("1987/06/19"), 1150);
         echo "<p>";
@@ -57,6 +59,7 @@ class Traitement {
         $nonInformaticien->setPrimeA(400);
         echo "Nouvelle prime = " . $nonInformaticien->getPrimeA();
     }
+    
     public static function instanciationEmployeNonInformaticienV2(){
         $nonInformaticien = new EmployeNonInformaticien(5, 'Roman', 'Denis', new DateTime("1992/06/25"), 13000);
         echo "<p>";
@@ -65,6 +68,7 @@ class Traitement {
         $nonInformaticien->setPrimeA(14000);
         echo "Nouvelle prime = " . $nonInformaticien->getPrimeA();
     }
+    
     public static function testGainAnnuel() {
         $p = new Projet('PR7', 'Librairie Gelistout', 102);
         $informaticien = new EmployeInformaticien(2, 'Dimont', 'Patrick', new DateTime("1980/07/12"),1200,$p);

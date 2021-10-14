@@ -1,13 +1,9 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-use App\ClassesMetier;
+namespace ClassesMetier\DRH;
 
-namespace App\ClassesMetier\DRH;
+use ClassesMetier\DRH\Employe;
+use DateTime;
 
 class EmployeNonInformaticien extends Employe {
     
@@ -38,4 +34,5 @@ class EmployeNonInformaticien extends Employe {
     public function __toString() : string {
         return "Non Informaticien : " . parent::__toString() . " - Prime Annuelle : " . $this->primeA;
     }
+    
 }

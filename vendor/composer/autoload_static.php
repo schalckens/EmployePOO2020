@@ -4,13 +4,9 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticIniteca1513ef2839687daf0f51c407bcee3
+class ComposerStaticInitded6b32c1445d851994aac26ce069337
 {
     public static $prefixLengthsPsr4 = array (
-        'I' => 
-        array (
-            'Includes\\' => 9,
-        ),
         'C' => 
         array (
             'ClassesMetier\\' => 14,
@@ -22,10 +18,6 @@ class ComposerStaticIniteca1513ef2839687daf0f51c407bcee3
     );
 
     public static $prefixDirsPsr4 = array (
-        'Includes\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/includes',
-        ),
         'ClassesMetier\\' => 
         array (
             0 => __DIR__ . '/../..' . '/classes',
@@ -37,15 +29,20 @@ class ComposerStaticIniteca1513ef2839687daf0f51c407bcee3
     );
 
     public static $classMap = array (
+        'App\\includes\\Traitement' => __DIR__ . '/../..' . '/includes/Traitement.php',
+        'ClassesMetier\\DRH\\Employe' => __DIR__ . '/../..' . '/classes/DRH/Employe.php',
+        'ClassesMetier\\DRH\\EmployeInformaticien' => __DIR__ . '/../..' . '/classes/DRH/EmployeInformaticien.php',
+        'ClassesMetier\\DRH\\EmployeNonInformaticien' => __DIR__ . '/../..' . '/classes/DRH/EmployeNonInformaticien.php',
+        'ClassesMetier\\RD\\Projet' => __DIR__ . '/../..' . '/classes/RD/Projet.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticIniteca1513ef2839687daf0f51c407bcee3::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticIniteca1513ef2839687daf0f51c407bcee3::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticIniteca1513ef2839687daf0f51c407bcee3::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitded6b32c1445d851994aac26ce069337::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitded6b32c1445d851994aac26ce069337::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitded6b32c1445d851994aac26ce069337::$classMap;
 
         }, null, ClassLoader::class);
     }

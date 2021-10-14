@@ -6,5 +6,10 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\includes\\Traitement' => $baseDir . '/includes/Traitement.php',
+    'ClassesMetier\\DRH\\Employe' => $baseDir . '/classes/DRH/Employe.php',
+    'ClassesMetier\\DRH\\EmployeInformaticien' => $baseDir . '/classes/DRH/EmployeInformaticien.php',
+    'ClassesMetier\\DRH\\EmployeNonInformaticien' => $baseDir . '/classes/DRH/EmployeNonInformaticien.php',
+    'ClassesMetier\\RD\\Projet' => $baseDir . '/classes/RD/Projet.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
 );
