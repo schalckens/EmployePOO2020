@@ -16,7 +16,7 @@ try{
     //Traitement::instanciationUnEmploye();
     Traitement::instanciationProjetV1();
     Traitement::instanciationEmployeInformaticienV1();
-    Traitement::instanciationEmployeInformaticienV2();
+    //Traitement::instanciationEmployeInformaticienV2();
     Traitement::instanciationEmployeNonInformaticienV1();
     Traitement::instanciationEmployeNonInformaticienV2();
     Traitement::testGainAnnuel();

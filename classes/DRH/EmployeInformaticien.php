@@ -5,7 +5,7 @@ namespace ClassesMetier\DRH;
 use ClassesMetier\DRH\Employe;
 use ClassesMetier\RD\Projet;
 use DateTime;
-
+use Exception;
 
 
 class EmployeInformaticien extends Employe {
@@ -28,7 +28,7 @@ class EmployeInformaticien extends Employe {
     }
 
     public function setPrimeM(float $primeM): void {
-        if($primeM <= ($this->salaireM*1.3)){
+        if($primeM <= ($this->salaireM*0.3)){
             $this->primeM = $primeM;
         }
         else{

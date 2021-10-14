@@ -4,6 +4,7 @@ namespace ClassesMetier\DRH;
 
 use ClassesMetier\DRH\Employe;
 use DateTime;
+use Exception;
 
 class EmployeNonInformaticien extends Employe {
     
