@@ -5,6 +5,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+namespace App\ClassesMetier\RD;
 
 class Projet {
     private string $codeProjet;

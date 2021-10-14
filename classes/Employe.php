@@ -5,6 +5,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+namespace App\ClassesMetier\DRH;
+
 abstract class Employe {
     protected int $numero;
     protected string $nom;

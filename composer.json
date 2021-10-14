@@ -7,5 +7,12 @@
             "email": "your@email.here"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\" : "./",
+            "ClassesMetier\\" : "./classes/",
+            "Includes\\" : "./includes/"
+        }
+    }
 }
